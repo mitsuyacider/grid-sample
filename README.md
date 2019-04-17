@@ -1,22 +1,15 @@
-# grid
+# nuxt-scss-starter
 
-> My sensational Nuxt.js project
+## Add global scss files
+* add scss files to assets/scss directory or such as your favorite direcotry. Then update nuxt.config.json to add the path.
 
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+```json
+  styleResources: {
+    scss: [
+      '~/assets/scss/_base.scss',
+      '~/path/to/{your_style}.scss',
+    ]
+  },
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+* Reboot 
